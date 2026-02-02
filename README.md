@@ -12,3 +12,6 @@ On top of providing the low-level bindings, this plugin adds
   - Play back Sequences and Patterns with individual channel pattern tracks, like with OpenMPT
   - Creation and visualisation of triggers that modify the current playing pattern or sequence
 - Documented Helper methods on the node to easily control playback of the attached mod-tracker resources
+
+https://github.com/user-attachments/assets/218debbf-af18-45e7-993d-e19774606bd3
+
