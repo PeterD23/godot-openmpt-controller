@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bnkdv2pe34c61"]
+
+[ext_resource type="Theme" uid="uid://chbppoc3hcchk" path="res://boxtheme.tres" id="1_7u13d"]
+[ext_resource type="Texture2D" uid="uid://b1oni0nipbh8c" path="res://addons/godot-openmpt/node/AudioStreamPlayer.svg" id="2_nt1up"]
+[ext_resource type="Script" uid="uid://653er74p1mvc" path="res://addons/godot-openmpt/view/mpt_channel.gd" id="2_s8ywy"]
+
+[node name="Channel" type="VSplitContainer" unique_id=1521439745]
+custom_minimum_size = Vector2(50, 50)
+anchors_preset = -1
+anchor_right = 0.104
+anchor_bottom = 0.46300003
+offset_right = 0.31999207
+offset_bottom = 3.959961
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_7u13d")
+script = ExtResource("2_s8ywy")
+
+[node name="Mute" type="CheckButton" parent="." unique_id=379764647]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+button_pressed = true
+icon = ExtResource("2_nt1up")
+icon_alignment = 2
+
+[node name="List" type="ItemList" parent="." unique_id=513104596]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_vertical = 3
+text_overrun_behavior = 0
+wraparound_items = false
+item_count = 1
+icon_mode = 0
+item_0/text = "--- -- --- --"
+
+[connection signal="toggled" from="Mute" to="." method="_on_mute_toggled"]
